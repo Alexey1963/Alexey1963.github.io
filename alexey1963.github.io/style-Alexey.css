@@ -1,23 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-* {
-    margin: 0;
-    padding: 0;
+
+
+#course-program {
+    padding: 230px 0 0 0;
 }
 
-body {
-    width: 100%;
-}
-
-.outer {
+.inner-alexey {
     max-width: 1440px;
-    width: 100%;
-    margin: auto;
-}
-.inner {
-    max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 71px;
     width: calc(100% - 142px);
 }
@@ -36,31 +28,25 @@ body {
     justify-content: flex-start;
     margin-bottom: 140px;
 }
+
+
 .alexey-header-text {
-    margin: 0 0 0 50px;
+    padding: 0 0 0 50px;
 }
-
-.line {
-    position: absolute;
-    top: 24px;
-    left: 739px;
-    background-color: black;
-    height: 14px;
-    min-width: 48.5%;
-}
-
-.content {
+.alexey-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-left: 13px;
+   
 }
+
 .content-mob {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
 .content-mob img {
     width: 185.92px;
     height: 152.84;
@@ -105,22 +91,26 @@ body {
     list-style-type: none;
     padding: 0px 0;
 }
+
 @media screen and (max-width: 1280px) {
+    #course-program {
+        padding: 130px 0 0 0;
+    }
     .outer {
         max-width: 834px;
         width: 100%;
     }
-    .inner {
+    .alexey-header-text {
+        padding: 0 0 0 25px;
+    }
+    .inner-alexey {
         max-width: 834px;
-        padding: 0 41px;
-        width: calc(100% - 82px);
-    }    
+        padding: 0 50px;
+        width: calc(100% - 100px);
+    }
     .header {
         font-size: 32px;
         margin-bottom: 81px;
-    }
-    .alexey-header-text {
-        margin: 0 0 0 29px;
     }
     .line {
         position: absolute;
@@ -130,7 +120,7 @@ body {
         height: 8px;
         min-width: 52.5%;
     }
-    .content {
+    .alexey-content {
         width: calc(100%-15px);
         margin: 0 7.7px 0 7.7px;
     }
@@ -158,13 +148,18 @@ body {
         font-weight: normal;
         font-size: 14px;
         line-height: 130%;
-    }  
+    }
 }
+
 @media screen and (max-width: 834px) {
+    #course-program {
+        padding: 50px 0 0 0;
+    }
     .outer {
         max-width: 375px;
     }
-    .inner {
+
+    .inner-alexey {
         padding: 0 33px;
         width: 100%;
         width: calc(375px - 66px);
@@ -176,20 +171,19 @@ body {
         margin-bottom: 40px;
     }
     .alexey-header-text {
-        margin: 0 0 0 0px;
-    }    
+        padding: 0;
+    }
     .line {
         position: absolute;
         top: 13px;
         left: 272px;
         height: 6.5px;
-        min-width: 48.5%;
+        min-width: 23%;
     }
-    .content {
+    .alexey-content {
         display: none;
     }
     .content-mob {
         display: flex;
-    }    
+    }
 }
-
